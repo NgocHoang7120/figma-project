@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+$textColor: #171717;
+$bgc: #E5E5E5;
+$bgRed: #FE4C4C;
+$bgDarkBlue: #021A84;
+
+$greenGradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #2ADA66;
+$purpleGradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #021A84;
+$orangeGradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #E5532A;
+
+@mixin btn-normal {
+    width: 149px;
+    height: 44px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+}
+
+@mixin hoverBTN($color, $bgc) {
+    color: $color;
+    background-color: $bgc;
+    // cursor: pointer;
+
+    a {
+        color: $color;
+    }
+}
+
+.app-header {
+    .container {
+        padding: 10px 18px;
+
+        .row {
+            max-width: 1160px;
+            margin: 0px auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // .header__img {
+            //     display: block;
+            //     height: 100%;
+
+            //     .img__logo {}
+            // }
+
+            .header__nav {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                list-style-type: none;
+
+                .nav__item {
+                    // width: 100%;
+                    height: 100%;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: currentColor;
+                    }
+
+                    &:nth-child(2) {
+                        border: 1px solid $bgDarkBlue;
+                        border-radius: 8px;
+                        @include btn-normal;
+
+                        a {
+                            color: inherit;
+                        }
+
+                        &:hover {
+                            @include hoverBTN(#fff, $bgDarkBlue);
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        border: 1px solid #999999;
+                        height: 17px;
+                    }
+
+                    &:last-child {
+                        background-color: $bgDarkBlue;
+                        border-radius: 8px;
+                        @include btn-normal;
+
+                        a {
+                            color: #fff;
+                        }
+
+                        &:hover {
+                            @include hoverBTN($bgDarkBlue, #ccc);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .banner {
+        .banner__img {
+            width: 100%;
+            height: 721px;
+            object-fit: cover;
+        }
+    }
+}
+
+.content {
+    background-color: $bgc;
+
+    .container {
+        padding-top: 40px;
+        max-width: 1160px;
+        margin: 0px auto;
+
+        .search-nav {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 12px;
+            border-radius: 8px;
+
+            .row {
+                form {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    font-size: 14px;
+
+                    .search__box {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+                        width: 100%;
+                        height: 50px;
+
+                        background-color: #fff;
+                        border-radius: 8px;
+                        padding: 13.5px 16px;
+
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                        }
+                    }
+
+                    .vertical {
+                        border: 1px solid #999999;
+                        height: 17px;
+                    }
+
+                    .search__location {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        height: 50px;
+                        width: 271px;
+                        background-color: #fff;
+                        padding: 13px 16px;
+                        border-radius: 8px;
+
+                        .search__location-left {
+                            display: flex;
+                            align-items: center;
+                            gap: 4px;
+
+                            input {
+                                border: none;
+                            }
+                        }
+
+                        .more__icon {
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .search__btn {
+                        color: #fff;
+                        text-decoration: none;
+                        border-radius: 8px;
+                        background-color: $bgDarkBlue;
+                        @include btn-normal;
+
+                        &:hover {
+                            @include hoverBTN($bgDarkBlue, #ccc);
+                        }
+                    }
+                }
+            }
+        }
+
+        .language {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            padding: 16px 12px 0px 12px;
+
+            .language__title {}
+
+            .language__list {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                .list-item {
+                    a {
+                        text-decoration: none;
+                        color: currentColor;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        display: inline-block;
+
+                        padding: 4px 8px;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
