@@ -40,6 +40,24 @@ $orangeGradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 
     }
 }
 
+@mixin card($color) {
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), $color;
+
+    .card-title {
+        color: $color;
+        font-size: 18px;
+        font-weight: 700;
+
+        margin: 8px 0px 16px 0px;
+    }
+
+    .card-desc {
+        color: $color;
+        font-weight: 400;
+    }
+}
+
 .app-header {
     .container {
         padding: 10px 18px;
@@ -169,6 +187,7 @@ $orangeGradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        flex-shrink: 0;
 
                         height: 50px;
                         width: 271px;
@@ -232,6 +251,269 @@ $orangeGradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 
 
                         padding: 4px 8px;
                         border-radius: 8px;
+                    }
+                }
+            }
+        }
+
+        .job-desc {
+            .job-desc__heading {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 87px 0px 40px 7px;
+
+                .job-desc__left {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+
+                    .left__wrap {
+                        width: 53px;
+                        height: 53px;
+                        background-color: #fff;
+                        outline: 7px solid rgba(255, 255, 255, 0.4);
+                        border-radius: 100%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    p {
+                        font-size: 34px;
+                        font-weight: 700;
+                    }
+                }
+
+                .job-desc__right {
+                    p {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: $bgDarkBlue;
+
+                        padding-right: 16px;
+                    }
+                }
+            }
+
+            .job-layout {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-template-areas:
+                    "j1 j2 j3"
+                    "j4 j5 j6"
+                    "j7 j8 j9";
+                gap: 32px;
+
+                .job-card {
+                    padding: 16px;
+                    background-color: #fff;
+                    border: 1px solid $bgDarkBlue;
+                    border-radius: 16px;
+
+                    &:first-child {
+                        grid-area: j1;
+                    }
+
+                    &:nth-child(2) {
+                        grid-area: j2;
+                    }
+
+                    &:nth-child(3) {
+                        grid-area: j3;
+                    }
+
+                    &:nth-child(4) {
+                        grid-area: j4;
+                    }
+
+                    &:nth-child(5) {
+                        grid-area: j5;
+                    }
+
+                    &:nth-child(6) {
+                        grid-area: j6;
+                    }
+
+                    &:nth-child(7) {
+                        grid-area: j7;
+                    }
+
+                    &:nth-child(8) {
+                        grid-area: j8;
+                    }
+
+                    &:last-child {
+                        grid-area: j9;
+                    }
+
+                    .card__heading {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-bottom: 8px;
+                        border-bottom: 1px solid $bgDarkBlue;
+
+                        .heading__left {
+                            width: 100%;
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 8px;
+
+                            .left__icon {
+                                width: 32px;
+                                height: 32px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .heading__right {
+                            flex-shrink: 0;
+
+                            p {
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: $bgDarkBlue;
+
+                                padding: 4px 8px;
+                                background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #021A84;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+
+                    // .line {
+                    //     border-top: 1px solid $bgc;
+                    //     margin: 8px auto;
+                    // }
+
+                    .card__detail {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 8px 0px;
+
+                        .detail__left {
+                            .detail__extra {
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: $bgDarkBlue;
+                            }
+                        }
+
+                        .vertical {
+                            border: 1px solid $bgc;
+                            height: 16px;
+                        }
+
+                        .detail__right {
+                            .detail__bonus {
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: $bgDarkBlue;
+                            }
+                        }
+
+                        .detail__monney {
+                            font-size: 14px;
+                            font-weight: 700;
+                            // line-height: 20px;
+                            color: $textColor;
+                            margin-top: 4px;
+
+                            span {
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: #999999;
+                            }
+                        }
+                    }
+
+                    .card__btn {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        a {
+                            text-decoration: none;
+                            color: currentColor;
+                            font-size: 12px;
+                            font-weight: 400;
+                            display: inline-block;
+
+                            padding: 4px 16px;
+                            background-color: #F2F2F2;
+                            border-radius: 8px;
+                        }
+
+                        .btn__left {
+                            display: flex;
+                            gap: 16px;
+
+                            .btn__first {}
+
+                            .btn__second {}
+                        }
+
+                        .btn__three {
+                            background-color: $bgRed;
+                            color: #fff;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+
+        .introduction {
+            .wrap__heading {
+                text-align: center;
+                margin: 80px 0px 40px 0px;
+
+                .sub-heading {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $bgDarkBlue;
+                }
+
+                .heading {
+                    font-size: 34px;
+                    font-weight: 700;
+                    color: #010d42;
+                }
+            }
+
+            .row {
+                display: flex;
+                gap: 32px;
+
+                .card-item {
+                    padding: 32px;
+                    text-align: center;
+                    background-color: #fff;
+                    flex: 1;
+
+
+                    .card__img {
+                        width: 54px;
+                        height: 54px;
+                    }
+
+                    &:first-child {
+                        @include card(#2ADA66);
+                    }
+
+                    &:nth-child(2) {
+                        @include card(#021A84);
+                    }
+
+                    &:last-child {
+                        @include card(#E5532A);
                     }
                 }
             }

@@ -129,6 +129,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: 0;
   height: 50px;
   width: 271px;
   background-color: #fff;
@@ -184,4 +185,231 @@ html {
   display: inline-block;
   padding: 4px 8px;
   border-radius: 8px;
+}
+.content .container .job-desc .job-desc__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 87px 0px 40px 7px;
+}
+.content .container .job-desc .job-desc__heading .job-desc__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.content .container .job-desc .job-desc__heading .job-desc__left .left__wrap {
+  width: 53px;
+  height: 53px;
+  background-color: #fff;
+  outline: 7px solid rgba(255, 255, 255, 0.4);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .container .job-desc .job-desc__heading .job-desc__left p {
+  font-size: 34px;
+  font-weight: 700;
+}
+.content .container .job-desc .job-desc__heading .job-desc__right p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #021A84;
+  padding-right: 16px;
+}
+.content .container .job-desc .job-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-areas: "j1 j2 j3" "j4 j5 j6" "j7 j8 j9";
+  gap: 32px;
+}
+.content .container .job-desc .job-layout .job-card {
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #021A84;
+  border-radius: 16px;
+}
+.content .container .job-desc .job-layout .job-card:first-child {
+  grid-area: j1;
+}
+.content .container .job-desc .job-layout .job-card:nth-child(2) {
+  grid-area: j2;
+}
+.content .container .job-desc .job-layout .job-card:nth-child(3) {
+  grid-area: j3;
+}
+.content .container .job-desc .job-layout .job-card:nth-child(4) {
+  grid-area: j4;
+}
+.content .container .job-desc .job-layout .job-card:nth-child(5) {
+  grid-area: j5;
+}
+.content .container .job-desc .job-layout .job-card:nth-child(6) {
+  grid-area: j6;
+}
+.content .container .job-desc .job-layout .job-card:nth-child(7) {
+  grid-area: j7;
+}
+.content .container .job-desc .job-layout .job-card:nth-child(8) {
+  grid-area: j8;
+}
+.content .container .job-desc .job-layout .job-card:last-child {
+  grid-area: j9;
+}
+.content .container .job-desc .job-layout .job-card .card__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #021A84;
+}
+.content .container .job-desc .job-layout .job-card .card__heading .heading__left {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.content .container .job-desc .job-layout .job-card .card__heading .heading__left .left__icon {
+  width: 32px;
+  height: 32px;
+}
+.content .container .job-desc .job-layout .job-card .card__heading .heading__left p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.content .container .job-desc .job-layout .job-card .card__heading .heading__right {
+  flex-shrink: 0;
+}
+.content .container .job-desc .job-layout .job-card .card__heading .heading__right p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #021A84;
+  padding: 4px 8px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #021A84;
+  border-radius: 8px;
+}
+.content .container .job-desc .job-layout .job-card .card__detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0px;
+}
+.content .container .job-desc .job-layout .job-card .card__detail .detail__left .detail__extra {
+  font-size: 12px;
+  font-weight: 400;
+  color: #021A84;
+}
+.content .container .job-desc .job-layout .job-card .card__detail .vertical {
+  border: 1px solid #E5E5E5;
+  height: 16px;
+}
+.content .container .job-desc .job-layout .job-card .card__detail .detail__right .detail__bonus {
+  font-size: 12px;
+  font-weight: 400;
+  color: #021A84;
+}
+.content .container .job-desc .job-layout .job-card .card__detail .detail__monney {
+  font-size: 14px;
+  font-weight: 700;
+  color: #171717;
+  margin-top: 4px;
+}
+.content .container .job-desc .job-layout .job-card .card__detail .detail__monney span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999999;
+}
+.content .container .job-desc .job-layout .job-card .card__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .container .job-desc .job-layout .job-card .card__btn a {
+  text-decoration: none;
+  color: currentColor;
+  font-size: 12px;
+  font-weight: 400;
+  display: inline-block;
+  padding: 4px 16px;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+}
+.content .container .job-desc .job-layout .job-card .card__btn .btn__left {
+  display: flex;
+  gap: 16px;
+}
+.content .container .job-desc .job-layout .job-card .card__btn .btn__three {
+  background-color: #FE4C4C;
+  color: #fff;
+  text-transform: uppercase;
+}
+.content .container .introduction .wrap__heading {
+  text-align: center;
+  margin: 80px 0px 40px 0px;
+}
+.content .container .introduction .wrap__heading .sub-heading {
+  font-size: 18px;
+  font-weight: 400;
+  color: #021A84;
+}
+.content .container .introduction .wrap__heading .heading {
+  font-size: 34px;
+  font-weight: 700;
+  color: #010d42;
+}
+.content .container .introduction .row {
+  display: flex;
+  gap: 32px;
+}
+.content .container .introduction .row .card-item {
+  padding: 32px;
+  text-align: center;
+  background-color: #fff;
+  flex: 1;
+}
+.content .container .introduction .row .card-item .card__img {
+  width: 54px;
+  height: 54px;
+}
+.content .container .introduction .row .card-item:first-child {
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #2ADA66;
+}
+.content .container .introduction .row .card-item:first-child .card-title {
+  color: #2ADA66;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 8px 0px 16px 0px;
+}
+.content .container .introduction .row .card-item:first-child .card-desc {
+  color: #2ADA66;
+  font-weight: 400;
+}
+.content .container .introduction .row .card-item:nth-child(2) {
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #021A84;
+}
+.content .container .introduction .row .card-item:nth-child(2) .card-title {
+  color: #021A84;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 8px 0px 16px 0px;
+}
+.content .container .introduction .row .card-item:nth-child(2) .card-desc {
+  color: #021A84;
+  font-weight: 400;
+}
+.content .container .introduction .row .card-item:last-child {
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), #E5532A;
+}
+.content .container .introduction .row .card-item:last-child .card-title {
+  color: #E5532A;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 8px 0px 16px 0px;
+}
+.content .container .introduction .row .card-item:last-child .card-desc {
+  color: #E5532A;
+  font-weight: 400;
 }/*# sourceMappingURL=Recland.css.map */
