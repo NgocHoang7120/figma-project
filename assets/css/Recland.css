@@ -412,4 +412,97 @@ html {
 .content .container .introduction .row .card-item:last-child .card-desc {
   color: #E5532A;
   font-weight: 400;
+}
+.content .container .partner .partner__title {
+  color: #021A84;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  margin: 80px 0px 40px 0px;
+}
+.content .container .partner .row {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.content .container .partner .row .partner-item {
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.content .container .partner .list-dot {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  margin-top: 16px;
+}
+.content .container .partner .list-dot .dot-item {
+  width: 15px;
+  height: 15px;
+  background: #C4C4C4;
+  border-radius: 50%;
+}
+.content .container .partner .list-dot .dot-item:nth-child(3) {
+  background: #021A84;
+}
+.content .container .partner .list-dot .dot-item:hover {
+  cursor: pointer;
+}
+.content .container .process .process__heading {
+  text-align: center;
+  margin: 80px 0px 44px 0px;
+}
+.content .container .process .process__heading .heading__sub {
+  font-size: 18px;
+  font-weight: 400;
+  color: #021A84;
+}
+.content .container .process .process__heading .heading {
+  color: #010d42;
+  font-size: 34px;
+  font-weight: 700;
+}
+.content .container .process .process-layout {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 102px;
+  flex-wrap: wrap;
+}
+.content .container .process .process-layout .process-item {
+  flex: 1;
+}
+.content .container .process .process-layout .process-item .wrap-number {
+  width: 24px;
+  height: 24px;
+  margin-inline: auto;
+  background-color: #999999;
+  border-radius: 50%;
+  outline: 4px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .container .process .process-layout .process-item .wrap-number p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.content .container .process .process-layout .process-item .process__img {
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 20px 0px 16px 0px;
+}
+.content .container .process .process-layout .process-item .process__text .text__title {
+  color: #171717;
+  font-size: 18px;
+  font-weight: 700;
+}
+.content .container .process .process-layout .process-item .process__text .text__desc {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
 }/*# sourceMappingURL=Recland.css.map */

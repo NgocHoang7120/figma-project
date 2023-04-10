@@ -518,5 +518,124 @@ $orangeGradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 
                 }
             }
         }
+
+        .partner {
+            .partner__title {
+                color: $bgDarkBlue;
+                font-size: 34px;
+                font-weight: 700;
+                text-align: center;
+
+                margin: 80px 0px 40px 0px;
+            }
+
+            .row {
+                display: flex;
+                gap: 60px;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .partner-item {
+                    padding: 8px;
+                    background-color: #fff;
+                    border-radius: 8px;
+                }
+            }
+
+            .list-dot {
+                display: flex;
+                justify-content: center;
+                gap: 17px;
+
+                margin-top: 16px;
+
+                .dot-item {
+                    width: 15px;
+                    height: 15px;
+                    background: #C4C4C4;
+                    border-radius: 50%;
+
+                    &:nth-child(3) {
+                        background: $bgDarkBlue;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .process {
+            .process__heading {
+                text-align: center;
+                margin: 80px 0px 44px 0px;
+
+                .heading__sub {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $bgDarkBlue;
+                }
+
+                .heading {
+                    color: #010d42;
+                    font-size: 34px;
+                    font-weight: 700;
+                }
+            }
+
+            .process-layout {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                gap: 102px;
+                flex-wrap: wrap;
+
+                .process-item {
+                    flex: 1;
+
+                    .wrap-number {
+                        width: 24px;
+                        height: 24px;
+                        margin-inline: auto;
+                        background-color: #999999;
+                        border-radius: 50%;
+                        outline: 4px solid #fff;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        p {
+                            color: #fff;
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .process__img {
+                        width: auto;
+                        height: auto;
+                        object-fit: cover;
+
+                        margin: 20px 0px 16px 0px;
+                    }
+
+                    .process__text {
+                        .text__title {
+                            color: #171717;
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+
+                        .text__desc {
+                            color: #333333;
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

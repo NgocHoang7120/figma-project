@@ -380,9 +380,73 @@
                     </div>
                 </div>
             </div>
+            <div class="partner">
+                <h3 class="partner__title">Đối tác</h3>
+                <div class="row">
+                    <img src="./assets/images/Recland/partner.svg" alt="partner" class="partner-item">
+                    <img src="./assets/images/Recland/partner.svg" alt="partner" class="partner-item">
+                    <img src="./assets/images/Recland/partner.svg" alt="partner" class="partner-item">
+                    <img src="./assets/images/Recland/partner.svg" alt="partner" class="partner-item">
+                    <img src="./assets/images/Recland/partner.svg" alt="partner" class="partner-item">
+                </div>
+                <div class="list-dot">
+                    <div class="dot-item" onclick="currentSlide(this)"></div>
+                    <div class="dot-item " onclick="currentSlide(this)"></div>
+                    <div class="dot-item " onclick="currentSlide(this)"></div>
+                    <div class="dot-item " onclick="currentSlide(this)"></div>
+                </div>
+            </div>
+            <div class="process">
+                <div class="process__heading">
+                    <p class="heading__sub">Quy trình làm việc</p>
+                    <p class="heading">Hợp tác cùng Recland</p>
+                </div>
+                <div class="process-layout">
+                    <div class="process-item">
+                        <div class="wrap-number">
+                            <p>1</p>
+                        </div>
+                        <img src="./assets/images/Recland/Add.svg" alt="ADD" class="process__img">
+                        <div class="process__text">
+                            <p class="text__title">Tạo một tài khoản</p>
+                            <p class="text__desc">Trở thành member trên RecLand</p>
+                        </div>
+                    </div>
+                    <div class="process-item">
+                        <div class="wrap-number">
+                            <p>2</p>
+                        </div>
+                        <img src="./assets/images/Recland/find.svg" alt="ADD" class="process__img">
+                        <div class="process__text">
+                            <p class="text__title">Tìm kiếm công việc</p>
+                            <p class="text__desc">Tìm kiếm công việc phù hợp để mời ứng viên</p>
+                        </div>
+                    </div>
+                    <div class="process-item">
+                        <div class="wrap-number">
+                            <p>3</p>
+                        </div>
+                        <img src="./assets/images/Recland/Shield.svg" alt="ADD" class="process__img">
+                        <div class="process__text">
+                            <p class="text__title">Giới thiệu ứng viên</p>
+                            <p class="text__desc">Giới thiệu ứng viên vào các vị trí đang tuyển, process ứng viên và
+                                nhận kết quả</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- end content -->
 </body>
+<script>
+    let currentSlide = (event) => {
+        let dots = document.querySelectorAll(".dot-item");
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].style.background = "#C4C4C4";
+        }
+        event.style.background = "#021A84";
+    }
+</script>
 
 </html>
