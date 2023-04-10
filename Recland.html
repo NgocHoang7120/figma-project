@@ -8,12 +8,13 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:ital,wght@0,500;0,700;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/Recland.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Recland</title>
 </head>
 
 <body>
     <!-- header -->
-    <header class="app-header">
+    <header id="header" class="app-header">
         <div class="container">
             <div class="row">
                 <a class="header__img" href="">
@@ -449,9 +450,73 @@
                     <a href="javascript:void(0)">Đăng Ký Ngay</a>
                 </div>
             </div>
+
         </div>
     </main>
     <!-- end content -->
+    <footer class="app-footer">
+        <div class="container">
+            <div class="row">
+                <form action="" class="form__footer">
+                    <input type="email" placeholder="Enter your email address" id="email" name="email">
+                    <button class="form__btn" type="submit"><img src="./assets/images/Recland/Stroke 1.svg"
+                            alt=""></button>
+                </form>
+                <div class="total">
+                    <div class="total-item">
+                        <div class="wrap-number">
+                            <p>199</p>
+                        </div>
+                        <p>Công việc</p>
+                    </div>
+                    <div class="total-item">
+                        <div class="wrap-number">
+                            <p>93</p>
+                        </div>
+                        <p>Công ty</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <img src="./assets/images/Recland/logo.png" alt="Logo" class="contact__logo">
+                    <ul class="social-list">
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </li>
+                <li class="contact-item">
+                    <p class="contact__title">Địa chỉ</p>
+                    <p class="contact__subtitle">Tòa nhà AC, 78 Duy Tân, <br> Quận Cầu Giấy, Hà Nội</p>
+                </li>
+                <li class="contact-item">
+                    <p class="contact__title">Liên hệ</p>
+                    <p class="contact__subtitle">
+                        0369 713 819 <br />
+                        luat.nguyen@recland.co</p>
+                </li>
+                <li class="contact-item">
+                    <p class="contact__title">Menu</p>
+                    <p class="contact__subtitle">
+                        Trang chủ <br>
+                        Tìm kiếm công việc <br>
+                        Sitemap
+                    </p>
+                </li>
+                <li class="contact-item">
+                    <p class="contact__title">Tài khoản của tôi</p>
+                    <p class="contact__subtitle">Tổng quan<br>
+                        Kho CV<br>
+                        Thông tin cá nhân
+                    </p>
+                </li>
+            </ul>
+            <p class="copyright">Copyright © 2022 Recland.co</p>
+        </div>
+        <a class="arrowTop" href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
 </body>
 <script>
     let currentSlide = (event) => {

@@ -644,6 +644,8 @@ $orangeGradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 
             border-radius: 20px;
             overflow: hidden;
 
+            margin-top: 80px;
+
             .sub__left {
                 display: flex;
                 align-items: center;
@@ -674,7 +676,10 @@ $orangeGradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 
                         font-weight: 700;
                     }
 
-                    .text__title {}
+                    .text__title {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
                 }
             }
 
@@ -697,6 +702,160 @@ $orangeGradient: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 
                     justify-content: center;
                     align-items: center;
                 }
+            }
+        }
+    }
+}
+
+.app-footer {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #021A84;
+    padding-top: 40px;
+
+    .container {
+        max-width: 1160px;
+        margin: 0px auto;
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .form__footer {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                input {
+                    width: 252px;
+                    height: 50px;
+
+                    border: 1px solid #E5E5E5;
+                    border-radius: 8px;
+                    padding-left: 16px;
+                }
+
+                .form__btn {
+                    width: 50px;
+                    height: 50px;
+                    background: linear-gradient(90deg, #EF463A 0%, #FCA939 100%);
+                    border-radius: 8px;
+                    border: none;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    // img {}
+                }
+            }
+
+            .total {
+                display: flex;
+                gap: 36px;
+
+                .total-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .wrap-number {
+                        width: 42px;
+                        height: 42px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        outline: 4px solid #f9fafc;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        p {
+                            color: #000;
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    p {
+                        color: #999999;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .contact-list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #E5E5E5;
+
+            .contact-item {
+                .contact__logo {
+                    padding-bottom: 8px;
+                    border-bottom: 1px solid #E5E5E5;
+                }
+
+                .social-list {
+                    flex: 1;
+                    list-style-type: none;
+                    display: flex;
+                    text-align: center;
+                    justify-content: space-between;
+
+                    i {
+                        font-size: 28px;
+                        color: #999999;
+                    }
+                }
+
+                .contact__title {
+                    color: $bgDarkBlue;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                .contact__subtitle {
+                    color: #999999;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .copyright {
+            color: #999999;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    .arrowTop {
+        width: 40px;
+        height: 40px;
+        background-color: $bgDarkBlue;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #ccc;
+
+            i {
+                color: #000;
             }
         }
     }

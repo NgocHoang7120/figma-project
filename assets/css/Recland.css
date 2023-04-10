@@ -511,6 +511,7 @@ html {
   height: 119px;
   border-radius: 20px;
   overflow: hidden;
+  margin-top: 80px;
 }
 .content .container .sub-header .sub__left {
   display: flex;
@@ -537,6 +538,10 @@ html {
   font-size: 26px;
   font-weight: 700;
 }
+.content .container .sub-header .sub__left .sub__text .text__title {
+  font-size: 14px;
+  font-weight: 400;
+}
 .content .container .sub-header .sub__right {
   width: 233px;
   flex-shrink: 0;
@@ -555,4 +560,128 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.app-footer {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #021A84;
+  padding-top: 40px;
+}
+.app-footer .container {
+  max-width: 1160px;
+  margin: 0px auto;
+}
+.app-footer .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app-footer .container .row .form__footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.app-footer .container .row .form__footer input {
+  width: 252px;
+  height: 50px;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  padding-left: 16px;
+}
+.app-footer .container .row .form__footer .form__btn {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(90deg, #EF463A 0%, #FCA939 100%);
+  border-radius: 8px;
+  border: none;
+}
+.app-footer .container .row .form__footer .form__btn:hover {
+  cursor: pointer;
+}
+.app-footer .container .row .total {
+  display: flex;
+  gap: 36px;
+}
+.app-footer .container .row .total .total-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.app-footer .container .row .total .total-item .wrap-number {
+  width: 42px;
+  height: 42px;
+  background-color: #fff;
+  border-radius: 50%;
+  outline: 4px solid #f9fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-footer .container .row .total .total-item .wrap-number p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+}
+.app-footer .container .row .total .total-item p {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+}
+.app-footer .container .contact-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.app-footer .container .contact-list .contact-item .contact__logo {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.app-footer .container .contact-list .contact-item .social-list {
+  flex: 1;
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.app-footer .container .contact-list .contact-item .social-list i {
+  font-size: 28px;
+  color: #999999;
+}
+.app-footer .container .contact-list .contact-item .contact__title {
+  color: #021A84;
+  font-size: 18px;
+  font-weight: 700;
+}
+.app-footer .container .contact-list .contact-item .contact__subtitle {
+  color: #999999;
+  font-size: 18px;
+  font-weight: 400;
+}
+.app-footer .container .copyright {
+  color: #999999;
+  font-size: 18px;
+  text-align: center;
+}
+.app-footer .arrowTop {
+  width: 40px;
+  height: 40px;
+  background-color: #021A84;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  color: #fff;
+  text-decoration: none;
+}
+.app-footer .arrowTop:hover {
+  background-color: #ccc;
+}
+.app-footer .arrowTop:hover i {
+  color: #000;
 }/*# sourceMappingURL=Recland.css.map */
