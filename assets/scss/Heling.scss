@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+$primary-color: #222120;
+$second-color: #E5E5E5;
+$textColor: #FAF5EF;
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: $second-color;
+}
+
+.container {
+    max-width: 1301px;
+    margin: 0px auto;
+    padding: 0rem 1.6rem;
+}
+
+.header {
+    background-color: $primary-color;
+
+    &-top {
+        padding: 3rem 0rem;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .header__menu {
+                display: flex;
+                align-items: center;
+                gap: 5rem;
+
+                .menu-item {
+                    list-style-type: none;
+
+                    a {
+                        font-size: 1.8rem;
+                        color: $textColor;
+                        text-decoration: none;
+                        text-transform: lowercase;
+                        opacity: 0.4;
+                    }
+                }
+            }
+
+            .header__contact {
+                font-size: 2.4rem;
+                color: #fff;
+                font-family: 'Prata', serif;
+            }
+        }
+    }
+
+    &-content {
+        position: relative;
+
+        margin-top: 10.2rem;
+        color: #fff;
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 3.2rem;
+
+            .content__left {
+                width: 100%;
+                max-width: 72.4rem;
+
+                .content__heading {
+                    color: #fff;
+                    font-size: 8.2rem;
+                    font-family: "Prata";
+                    line-height: calc(81/82);
+                    letter-spacing: -0.16rem;
+                    font-weight: 400;
+
+                    margin-bottom: 6.8rem;
+
+                    .heading-hide {
+                        opacity: 0;
+                    }
+
+                    &>span {
+                        display: block;
+                    }
+                }
+
+                .content__sub-heading {
+                    width: 100%;
+                    max-width: 40.7rem;
+
+                    margin-left: auto;
+                    color: #fff;
+                    font-size: 2rem;
+                    opacity: 0.6;
+                }
+            }
+
+            // .content__right {}
+        }
+
+        .header__img-bottom {
+            position: absolute;
+            z-index: 1;
+            left: 16.8rem;
+            bottom: -7.8rem;
+        }
+    }
+
+}
