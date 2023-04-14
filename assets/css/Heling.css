@@ -208,6 +208,7 @@ html {
   color: #F8F3ED;
   font-size: 5rem;
   line-height: 1.24;
+  font-weight: normal;
 }
 .project-slider .slider-bottom .slider-text a {
   color: #F8F3ED;
@@ -377,6 +378,7 @@ html {
 .footer .row .footer-left .left__contact {
   font-size: 3rem;
   line-height: 1.1333333333;
+  margin-left: 1rem;
 }
 .footer .row .footer-left .left__contact .contact__email,
 .footer .row .footer-left .left__contact .contact__phonenumber {

@@ -254,6 +254,7 @@ $textColor: #FAF5EF;
                     color: #F8F3ED;
                     font-size: 5rem;
                     line-height: calc(62/50);
+                    font-weight: normal;
                 }
 
                 a {
@@ -461,6 +462,7 @@ $textColor: #FAF5EF;
             .left__contact {
                 font-size: 3rem;
                 line-height: calc(34/30);
+                margin-left: 1rem;
 
                 .contact__email,
                 .contact__phonenumber {
