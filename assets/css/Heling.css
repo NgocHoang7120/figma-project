@@ -15,12 +15,18 @@ html {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #E5E5E5;
+  overflow: hidden;
 }
 
 .container {
   max-width: 1301px;
   margin: 0px auto;
   padding: 0rem 1.6rem;
+}
+
+.line-bottom {
+  display: block;
+  margin: 15rem auto 12rem auto;
 }
 
 .header {
@@ -96,4 +102,321 @@ html {
   z-index: 1;
   left: 16.8rem;
   bottom: -7.8rem;
+}
+
+.about {
+  margin-top: 25.8rem;
+}
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-header .header-left {
+  width: 100%;
+  max-width: 38.8rem;
+  color: #222120;
+  font-size: 7rem;
+  line-height: 1.0857142857;
+  font-family: "Prata";
+}
+.about-header .header-left span {
+  display: block;
+}
+.about-header .header-right {
+  width: 100%;
+  max-width: 63.8rem;
+  color: #222120;
+  font-size: 2.4rem;
+  line-height: 1.4166666667;
+  opacity: 0.7;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 11rem;
+}
+.about-content .content-left {
+  width: 100%;
+  max-width: 61.6rem;
+  flex: 1;
+}
+.about-content .content-left img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-content .content-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 51.3rem;
+  width: 100%;
+}
+.about-content .content-right img:last-of-type {
+  max-width: 40.7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 4rem auto;
+}
+.about-content .content-right p {
+  color: #2D2D2D;
+  font-size: 5.2rem;
+  font-family: "Prata";
+  line-height: 1.1730769231;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.project-header h2 {
+  color: #222120;
+  font-size: 7rem;
+  line-height: 1.0857142857;
+  font-family: "Prata";
+}
+.project-header a {
+  color: #222120;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  letter-spacing: -0.05rem;
+}
+.project-slider {
+  width: 100%;
+  background: url("../images/Heling/dining.png") center/cover no-repeat;
+  height: 71.2rem;
+  position: relative;
+}
+.project-slider .slider-bottom {
+  position: absolute;
+  z-index: 2;
+  bottom: 6.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 126.9rem;
+  display: flex;
+  align-items: center;
+}
+.project-slider .slider-bottom .slider-text {
+  width: 100%;
+}
+.project-slider .slider-bottom .slider-text h3 {
+  color: #F8F3ED;
+  font-size: 5rem;
+  line-height: 1.24;
+}
+.project-slider .slider-bottom .slider-text a {
+  color: #F8F3ED;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  letter-spacing: -0.05rem;
+  font-family: "Prata";
+}
+.project-slider .slider-bottom .slider-dot {
+  flex-shrink: 0;
+  width: 16.9rem;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-slider .slider-bottom .slider-dot .dot-item {
+  position: relative;
+}
+.project-slider .slider-bottom .slider-dot .dot-item .gray-dot {
+  width: 2.6rem;
+  height: 2.6rem;
+  background-color: #c7bcb0;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+}
+.project-slider .slider-bottom .slider-dot .dot-item .gray-dot:hover {
+  cursor: pointer;
+}
+.project-slider .slider-bottom .slider-dot .dot-item:nth-child(3) .gray-dot {
+  opacity: 0;
+}
+
+.designer {
+  color: #F8F3ED;
+  background-color: #222120;
+  padding-top: 16rem;
+}
+.designer .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.designer .row .designer__content {
+  max-width: 61.6rem;
+}
+.designer .row .designer__content .content-header {
+  font-size: 7rem;
+  line-height: 1.0857142857;
+  font-family: "Prata";
+  font-weight: normal;
+}
+.designer .row .designer__content p {
+  font-size: 2.4rem;
+  line-height: 1.4166666667;
+  opacity: 0.7;
+}
+.designer .row .designer__content p:first-of-type {
+  margin: 3rem 0 2.5rem 0;
+}
+.designer .row .designer__content .content-text {
+  text-decoration: underline;
+  opacity: 1;
+  letter-spacing: -0.05rem;
+  margin-top: 4rem;
+}
+.designer .row .designer__image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.articles {
+  color: #222120;
+  font-family: "Prata";
+}
+.articles-header {
+  margin-top: 18rem;
+  margin-bottom: 15.4rem;
+  text-align: center;
+}
+.articles-header .heading {
+  font-size: 7rem;
+  line-height: 1.0857142857;
+}
+.articles-header a {
+  color: inherit;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  letter-spacing: -0.05rem;
+}
+.articles .row {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.articles .row .left,
+.articles .row .right {
+  flex: 1;
+}
+.articles .row .left .top,
+.articles .row .right .top {
+  padding-bottom: 3.5rem;
+  border-bottom: 0.1rem solid #d7d8d6;
+}
+.articles .row .left .top img,
+.articles .row .right .top img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.articles .row .left .top .question,
+.articles .row .right .top .question {
+  font-size: 3rem;
+  line-height: 1;
+  margin-top: 2.9rem;
+}
+.articles .row .left .bottom,
+.articles .row .right .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 17.8rem;
+}
+.articles .row .left .bottom a,
+.articles .row .right .bottom a {
+  color: inherit;
+  font-size: 2.4rem;
+  line-height: 1.335;
+  letter-spacing: 0.05rem;
+}
+.articles .row .left .bottom .date,
+.articles .row .right .bottom .date {
+  font-family: "DM Sans";
+  font-size: 1.6rem;
+  line-height: 1.25;
+  opacity: 0.5;
+}
+
+.footer {
+  color: #F8F3ED;
+  background-color: #222120;
+  font-family: "Prata";
+}
+.footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10rem;
+  padding-bottom: 14.9rem;
+}
+.footer .row .footer-left .left__title {
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+  margin-bottom: 7.1rem;
+}
+.footer .row .footer-left li {
+  margin-bottom: 5rem;
+}
+.footer .row .footer-left .left__contact {
+  font-size: 3rem;
+  line-height: 1.1333333333;
+}
+.footer .row .footer-left .left__contact .contact__email,
+.footer .row .footer-left .left__contact .contact__phonenumber {
+  font-size: 4rem;
+  line-height: 1.2;
+  opacity: 0.6;
+  color: inherit;
+  display: block;
+  margin-top: 2rem;
+}
+.footer .row .footer-right {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.footer .row .footer-right .arrow-top {
+  text-align: center;
+}
+.footer .row .footer-right .arrow-top:hover {
+  cursor: pointer;
+}
+.footer .row .footer-right .arrow-top p {
+  font-size: 2.4rem;
+  line-height: 1.3333333333;
+  opacity: 0.4;
+  margin-top: 1rem;
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "DM Sans";
+  padding-bottom: 3.6rem;
+}
+.footer-bottom p {
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 1.3333333333;
+  opacity: 0.4;
+}
+.footer-bottom img {
+  flex-shrink: 0;
 }/*# sourceMappingURL=Heling.css.map */
